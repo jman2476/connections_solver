@@ -5,11 +5,9 @@ import "fmt"
 func main() {
 	opts := generate(items)
 
-	if len(opts) != 70 {
-		fmt.Printf("Found %d, expected %d\n", len(opts), 70)
-	}
+	filt := filter(opts)
 
-	for _, c := range opts {
-		fmt.Println(c)
+	for _, f := range pair(filt) {
+		fmt.Println(f)
 	}
 }

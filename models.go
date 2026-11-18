@@ -1,5 +1,7 @@
 package main
 
-type Category [4]string
+type Category []string
 
 type Options []Category
+
+type Pair [2]Category
